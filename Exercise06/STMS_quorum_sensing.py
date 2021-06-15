@@ -17,7 +17,7 @@ class MyParticleMethod(VerletList):
 
 
 if __name__ == "__main__":
-    df: pd.DataFrame = pd.read_csv('Exercise01/QSBacterialPos.dat', sep="\s+", header=None)
+    df: pd.DataFrame = pd.read_csv('Exercise06/QSBacterialPos.dat', sep="\s+", header=None)
     print(df)
 
     # pl = [MyParticle(row) for index, row in df.iterrows()]

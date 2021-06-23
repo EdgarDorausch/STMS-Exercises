@@ -73,8 +73,12 @@ class ParticleMethod(ABC):
         pass
         
     def run(self, T: int):
+        print('Running particle method...')
+        t0 = time.time()
         for t in range(T):
             self._step(t)
+        t1 = time.time()
+        print(f'... it took {t1-t0:.3f}s')
 
 
 
